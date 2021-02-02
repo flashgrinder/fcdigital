@@ -75,13 +75,20 @@ gulp.task('nunja', nunja);
 
 function sassproc() {
 	const autoprefixer = require('autoprefixer');
+	const prt = require('postcss-responsive-type');
+
+	const plugins = [
+		autoprefixer({grid: "autoplace"}),
+		prt()
+	]
+	
 	return gulp.src(source.app.sass)
-	// .pipe(sourcemaps.init())
+	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
 	.pipe(concat('style.min.css'))
 	.pipe(gcmq())
-	.pipe(postcss([autoprefixer({grid: "autoplace"})]))
-	// .pipe(sourcemaps.write('.'))
+	.pipe(postcss(plugins))
+	.pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest(source.app.css))
 	.pipe(browserSync.reload({ stream: true }));
 }

@@ -2,10 +2,29 @@
 
 @font-face {
   font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Light.eot");
+  src: url("../fonts/Roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Italic.eot");
+  src: url("../fonts/Roboto/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Regular.eot");
   src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,22 +33,55 @@
   src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro.eot");
+  src: url("../fonts/GothamPro/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro.woff") format("woff"), url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Light.eot");
+  src: url("../fonts/GothamPro/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Variables */
 
 :root {
-  --color-blue: #4A72CE;
-  --color-blue-opaciti-85: rgba(74, 114, 206, 0.85);
-  --color-light-blue: #5FB2D6;
-  --color-dark-blue: #43b1e0;
-  --color-dark: #555555;
+  --color-violet: #3D2373;
+  --color-orange: #FC682D;
+  --color-dark: #303B3F;
   --color-gray: #EFEFEF;
   --color-white: #FFFFFF;
-  --color-dark-gray: #A9A9A9;
-  --color-white-gray: #E5E5E5;
-  --font-main: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-second: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-gotham: "Gotham Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Base */
@@ -86,113 +138,101 @@ img {
 
 /* Background */
 
-.bg_blue {
-  background-color: var(--color-blue);
-}
-
-.bg_white {
+.bg--white {
   background-color: var(--color-white);
 }
 
-.bg_gray {
+.bg--gray {
   background-color: var(--color-gray);
-}
-
-.bg_dark-gray {
-  background-color: var(--color-dark-gray);
 }
 
 /* Title */
 
 .title {
-  font-family: var(--font-second);
+  font-family: var(--font-roboto);
   font-style: normal;
   margin: 0;
 }
 
-.title_big {
+.title--big {
   font-size: 38px;
 }
 
-.title_medium {
+.title--medium {
   font-size: 24px;
 }
 
-.title_blue {
+.title--blue {
   color: var(--color-blue);
 }
 
-.title_white {
+.title--white {
   color: var(--color-white);
 }
 
-.title_w-black {
+.title--w-black {
   font-weight: 900;
 }
 
-.title_w-bold {
+.title--w-bold {
   font-weight: bold;
 }
 
-.title_w-medium {
+.title--w-medium {
   font-weight: 500;
 }
 
-.title_w-regular {
+.title--w-regular {
   font-weight: normal;
 }
 
-.title_uppercase {
+.title--uppercase {
   text-transform: uppercase;
 }
 
 .title-second {
-  font-family: var(--font-main);
+  font-family: var(--font-roboto);
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 100%;
-  color: var(--color-blue);
+  color: var(--color-violet);
   margin: 0;
 }
 
 /* Text */
 
 .text {
-  font-family: var(--font-main);
+  font-family: var(--font-roboto);
   font-style: normal;
   margin: 0;
 }
 
-.text_dark {
+.text--dark {
   color: var(--color-dark);
 }
 
-.text_white {
+.text--white {
   color: var(--color-white);
 }
 
-.text_white-gray {
-  color: var(--color-white-gray);
-}
-
-.text_s-normal {
+.text--s-normal {
   font-size: 16px;
 }
 
-.text_w-light {
+.text--w-light {
   font-weight: 300;
 }
 
-.text_w-regular {
-  font-weight: 400;
+.text--w-regular {
+  font-weight: normal;
 }
 
-.text_w-medium {
+.text--w-medium {
   font-weight: 500;
 }
 
-.text_w-bold {
+.text--w-bold {
   font-weight: 700;
 }
 
@@ -203,7 +243,7 @@ img {
 .page {
   position: relative;
   margin: 0;
-  font-family: var(--font-main);
+  font-family: var(--font-roboto);
   font-size: 16px;
   line-height: 1.25;
   background-color: var(--color-white);
@@ -232,7 +272,7 @@ img {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1919px) {
-  .hide-extra-large {
+  .hide-large {
     display: none !important;
   }
 }
@@ -264,3 +304,4 @@ img {
     display: none !important;
   }
 }
+/*# sourceMappingURL=style.min.css.map */

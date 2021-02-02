@@ -14,7 +14,7 @@
     display: none !important;
 }
 
-.hide-extra-large {
+.hide-large {
 	@include large(display, none !important);
 }
 
@@ -47,93 +47,84 @@
 /* Background */
 
 .bg {
-    &_blue {
-        background-color: var(--color-blue);
-    }
-    &_white {
+    &--white {
         background-color: var(--color-white);
     }
-    &_gray {
+    &--gray {
         background-color: var(--color-gray);
     }
-    &_dark-gray {
-        background-color: var(--color-dark-gray);
-	}
 }
 
 /* Title */
 
 .title {
-    font-family: var(--font-second);
+    font-family: var(--font-roboto);
     font-style: normal;
     margin: 0;
-    &_big {
+    &--big {
 		font-size: 38px;
     }
-    &_medium {
+    &--medium {
         font-size: 24px;
     }
-    &_blue {
+    &--blue {
         color: var(--color-blue);
     }
-    &_white {
+    &--white {
         color: var(--color-white);
 	}
-	&_w-black {
+	&--w-black {
 		font-weight: 900;
 	}
-	&_w-bold {
+	&--w-bold {
 		font-weight: bold;
 	}
-	&_w-medium {
+	&--w-medium {
 		font-weight: 500;
 	}
-	&_w-regular {
+	&--w-regular {
 		font-weight: normal;
 	}
-	&_uppercase {
+	&--uppercase {
 		text-transform: uppercase;
 	}
 }
 
 .title-second {
-    font-family: var(--font-main);
+    font-family: var(--font-roboto);
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
     line-height: 100%;
-    color: var(--color-blue);
+    color: var(--color-violet);
     margin: 0;
 }
 
 /* Text */
 
 .text {
-    font-family: var(--font-main);
+    font-family: var(--font-roboto);
     font-style: normal;
     margin: 0;
-	&_dark {
+	&--dark {
 		color: var(--color-dark); 
 	}
-	&_white {
+	&--white {
 		color: var(--color-white);
-	} 
-	&_white-gray {
-		color: var(--color-white-gray);
 	}
-	&_s-normal {
+	&--s-normal {
 		font-size: 16px;
 	}
-	&_w-light {
+	&--w-light {
 		font-weight: 300;
 	}
-	&_w-regular {
-		font-weight: 400;
+	&--w-regular {
+		font-weight: normal;
 	}
-	&_w-medium {
+	&--w-medium {
 		font-weight: 500;
 	}
-	&_w-bold {
+	&--w-bold {
 		font-weight: 700;
 	}
 }
