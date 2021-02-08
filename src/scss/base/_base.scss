@@ -9,3 +9,7 @@ html {
 img {
     max-width: 100%;
 }
+
+.debug {
+    @include debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}

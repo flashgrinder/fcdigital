@@ -52,7 +52,7 @@ $fields_mobile: 10px;
 }
 
 @mixin wrapper(){
-    max-width: 1920px;
+    max-width: 1360px;
     margin: 0 auto;
     @include wrapper-full();
 }
