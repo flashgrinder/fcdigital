@@ -91,7 +91,7 @@ function styles() {
 	.pipe(gcmq())
 	.pipe(postcss(plugins))
 	.pipe(gulp.dest(source.src.css))
-	.pipe(browserSync.reload({ stream: true }));
+	.pipe(browserSync.reload({ stream: true }))
 }
 gulp.task('styles', styles);
 
@@ -121,7 +121,7 @@ function watch() {
 	});
 	gulp.watch(source.watch.css);
 	gulp.watch(source.watch.sass, styles);
-	gulp.watch(source.watch.js, js);
+	gulp.watch(source.watch.js, js).on('change', browserSync.reload);
 	gulp.watch(source.watch.php);
 	gulp.watch(source.watch.pug, pugs);
 	gulp.watch(source.watch.nunchucks, nunjucksTmpl).on('change', browserSync.reload);
