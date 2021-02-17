@@ -1,0 +1,13 @@
+.social__icon {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social__icon ~ .social__icon {
+    margin-left: 55px;
+}
+
+.social__svg {
+    width: 30px;
+    height: 30px;
+}
