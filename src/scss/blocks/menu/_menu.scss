@@ -1,0 +1,15 @@
+.menu {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: 90px;
+    height: 100%;
+    width: 25vw;
+    background: yellow;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: ease .5s;
+    &.is-open {
+        transform: translateX(0px);
+    }
+}
