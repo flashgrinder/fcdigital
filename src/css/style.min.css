@@ -258,7 +258,6 @@ img {
 .header {
   position: -webkit-sticky;
   position: sticky;
-  padding: 20px 0;
   z-index: 15;
   top: 0;
 }
@@ -270,6 +269,7 @@ img {
           justify-content: space-between;
   -webkit-align-items: center;
           align-items: center;
+  padding: 20px 0;
 }
 
 .header__social {
