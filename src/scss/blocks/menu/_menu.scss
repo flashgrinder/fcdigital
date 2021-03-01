@@ -56,12 +56,6 @@
     margin-top: 30px;
 }
 
-.menu__link {
-    display: block;
-    color: var(--color-white);
-    text-decoration: none;
-}
-
 .menu__item::before {
     content: '';
     position: absolute;
@@ -84,4 +78,10 @@
 
 .menu__item:hover::before {
     clip-path: inset(0 0 0 0);
+}
+
+.menu__link {
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
 }
