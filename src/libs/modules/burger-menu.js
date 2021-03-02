@@ -1,14 +1,14 @@
-import { gsap } from "gsap";
+import gsap from 'gsap';
 
 const burger = document.querySelector('.js-burger');
 const menu = document.querySelector('.js-menu');
 const overlayMenu = document.querySelector('.js-overlay-menu');
 let isOpen = burger.classList.contains('is-open');
 
-let tl = gsap.timeline({defaults: {duration: .3, ease: "power3.out"}});
+let tl = gsap.timeline({defaults: {duration: .3, ease: 'power3.out'}});
 
 tl.paused(true);
-tl.to(".menu__item", {opacity: 1, x: "0px", stagger: .3});
+tl.to('.menu__item', {opacity: 1, x: '0px', stagger: .1});
 
 function open() {
     burger.classList.add('is-open');
@@ -16,7 +16,7 @@ function open() {
     overlayMenu.classList.add('is-open');
     setTimeout(() => {
         tl.play();
-    }, 500);
+    }, 300);
     isOpen = true;
 }
 
@@ -40,4 +40,4 @@ function destroy() {
     burger.removeEventListener('click', toggle)
 }
 
-export default {init, destroy}
+export default {init, destroy, toggle}

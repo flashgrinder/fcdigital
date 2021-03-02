@@ -420,7 +420,7 @@ img {
   -webkit-clip-path: inset(0 0 100% 0);
           clip-path: inset(0 0 100% 0);
   transition: ease-in-out .4s;
-  transition-delay: 1.3s;
+  transition-delay: .5s;
 }
 
 .overlay-menu.is-open {
@@ -564,6 +564,20 @@ img {
   line-height: 0.73;
   cursor: default;
   z-index: 10;
+}
+
+/* Loader */
+
+.loader-screen {
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: var(--color-orange);
+  width: 0%;
+  height: calc(100vh - 90px);
+  height: 100%;
+  z-index: 9999;
 }
 
 /* ANOTHER MODULES */
