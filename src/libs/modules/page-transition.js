@@ -39,6 +39,7 @@ function pageTransition() {
     });
 }
 
+// CONTENT ANIMATION
 function contentAnimation() {
 
     let tl = gsap.timeline();
