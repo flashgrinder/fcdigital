@@ -79,7 +79,6 @@ barba.init({
         }
     }],
     transitions: [{
-        // name: 'default-transition',
         leave(data) {
             closeMenu();
             pageTransition();
