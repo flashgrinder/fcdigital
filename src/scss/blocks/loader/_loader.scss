@@ -1,8 +1,22 @@
-.loader-screen {
-    position: absolute;
-    background-color: var(--color-orange);
-    width: 0%;
-    height: calc(100vh - 90px);
+.loader__screen {
+    position: fixed;
+    background-color: var(--color-violet);
+    width: 100%;
     height: 100%;
     z-index: 9999;
+}
+
+.loader__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 130px;
+    width: 180px;
+    opacity: 0;
+}
+
+.loader__logo-svg {
+    stroke: var(--color-white);
 }

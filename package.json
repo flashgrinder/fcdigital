@@ -39,13 +39,12 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "postcss": "^8.2.4",
-    "pug": "^3.0.0",
+    "pug": "^3.0.2",
     "smart-grid": "^2.1.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "@barba/core": "^2.9.7",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "gsap": "^3.6.0",
