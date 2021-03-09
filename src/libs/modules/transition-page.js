@@ -15,7 +15,6 @@ function pageTransitionLoaderOut() {
     tl.to('.js-loader-logo', {
         duration: .125,
         opacity: 1,
-        scale: 1.2,
         delay: .250,
         ease: "Power1.easeOut"
     });
@@ -23,13 +22,11 @@ function pageTransitionLoaderOut() {
     tl.to('.js-loader-logo', {
         duration: .125,
         opacity: 1,
-        scale: 1,
         delay: .125,
         ease: "Power1.easeOut"
     });
 
 }
-
 // PAGE TRANSITION OUT
 function pageTransitionOut() {
 
@@ -41,7 +38,6 @@ function pageTransitionOut() {
     });
 
 }
-
 // PAGE TRANSITION LOADER IN
 function pageTransitionLoaderIn() {
 
@@ -80,15 +76,10 @@ function pageTransitionIn() {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const loaderScreen = document.querySelector('.js-loader-screen');
     let jsLinksTrs = document.querySelectorAll('.js-transition-link, .wysiwyg a');
-
     let jsLinksPage = Array.prototype.slice.call(jsLinksTrs);
 
-    // loaderScreen.classList.add('is-open');
-
     setTimeout(() => {
-        // loaderScreen.classList.add('is-hidden');
         pageTransitionLoaderIn();
         pageTransitionIn();
     }, 500);
@@ -100,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 e.preventDefault();
 
-                // loaderScreen.classList.add('is-active');
                 pageTransitionLoaderOut();
                 pageTransitionOut();
 

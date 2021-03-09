@@ -1,0 +1,11 @@
+@keyframes line-preloader {
+    0% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes blink-preloader {
+    50% {
+        opacity: 0.3;
+    }
+}
